@@ -10,7 +10,7 @@ Summary(pl):	Lingua::Stem::Snowball::Da - algorytm Portera okre¶laj±cy rdzenie s
 Name:		perl-Lingua-Stem-Snowball-Da
 Version:	1.01
 Release:	2
-License:	?
+License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e8d9a8285bce0c9e4bedc138cd6a1501

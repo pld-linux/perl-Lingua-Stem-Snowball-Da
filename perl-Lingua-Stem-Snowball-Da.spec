@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Lingua
-%define	pnam	Stem-Snowball-Da
+%define		pdir	Lingua
+%define		pnam	Stem-Snowball-Da
 Summary:	Lingua::Stem::Snowball::Da - Porter's stemming algorithm for Danish
 Summary(pl):	Lingua::Stem::Snowball::Da - algorytm Portera okre¶laj±cy rdzenie s³ów dla jêzyka duñskiego
 Name:		perl-Lingua-Stem-Snowball-Da

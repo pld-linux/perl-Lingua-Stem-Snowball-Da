@@ -9,12 +9,12 @@ Summary:	Lingua::Stem::Snowball::Da - Porter's stemming algorithm for Danish
 Summary(pl):	Lingua::Stem::Snowball::Da - algorytm Portera okre¶laj±cy rdzenie s³ów dla jêzyka duñskiego
 Name:		perl-Lingua-Stem-Snowball-Da
 Version:	1.01
-Release:	1
+Release:	2
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	perl >= 5.6.1
-BuildRequires:	rpm-perlprov >= 4.0.2-104
+BuildRequires:	perl >= 5.8
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,7 +32,8 @@ ten mo¿na znale¼æ na stronie Snowballa: http://snowball.tartarus.org/.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -50,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/%{pdir}/Stem/Snowball/*.pm
+%{perl_vendorlib}/%{pdir}/Stem/Snowball/*.pm
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
 %{_mandir}/man3/*

@@ -43,7 +43,8 @@ ten mo¿na znale¼æ na stronie Snowballa: http://snowball.tartarus.org/.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 install stemmer.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean

@@ -6,7 +6,7 @@
 %define		pdir	Lingua
 %define		pnam	Stem-Snowball-Da
 Summary:	Lingua::Stem::Snowball::Da - Porter's stemming algorithm for Danish
-Summary(pl):	Lingua::Stem::Snowball::Da - algorytm Portera okre¶laj±cy rdzenie s³ów dla jêzyka duñskiego
+Summary(pl.UTF-8):   Lingua::Stem::Snowball::Da - algorytm Portera okreÅ›lajÄ…cy rdzenie sÅ‚Ã³w dla jÄ™zyka duÅ„skiego
 Name:		perl-Lingua-Stem-Snowball-Da
 Version:	1.01
 Release:	3
@@ -24,10 +24,10 @@ The stem function takes a scalar as a parameter and stems the word
 according to Martin Porter's Danish stemming algorithm, which can be
 found at the Snowball website: http://snowball.tartarus.org/.
 
-%description -l pl
-Funkcja okre¶laj±ca rdzenie s³ów pobiera skalarny parametr i korzysta
-z algorytmu dla jêzyka duñskiego autorstwa Martina Portera. Algorytm
-ten mo¿na znale¼æ na stronie Snowballa: http://snowball.tartarus.org/.
+%description -l pl.UTF-8
+Funkcja okreÅ›lajÄ…ca rdzenie sÅ‚Ã³w pobiera skalarny parametr i korzysta
+z algorytmu dla jÄ™zyka duÅ„skiego autorstwa Martina Portera. Algorytm
+ten moÅ¼na znaleÅºÄ‡ na stronie Snowballa: http://snowball.tartarus.org/.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

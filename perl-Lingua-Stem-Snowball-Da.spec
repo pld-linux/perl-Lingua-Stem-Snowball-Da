@@ -6,7 +6,7 @@
 %define		pdir	Lingua
 %define		pnam	Stem-Snowball-Da
 Summary:	Lingua::Stem::Snowball::Da - Porter's stemming algorithm for Danish
-Summary(pl.UTF-8):   Lingua::Stem::Snowball::Da - algorytm Portera określający rdzenie słów dla języka duńskiego
+Summary(pl.UTF-8):	Lingua::Stem::Snowball::Da - algorytm Portera określający rdzenie słów dla języka duńskiego
 Name:		perl-Lingua-Stem-Snowball-Da
 Version:	1.01
 Release:	3
